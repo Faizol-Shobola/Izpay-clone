@@ -581,14 +581,6 @@ video {
   left: 0px;
 }
 
-.z-10{
-  z-index: 10;
-}
-
-.z-50{
-  z-index: 50;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -597,6 +589,11 @@ video {
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .-mr-1{
@@ -679,6 +676,14 @@ video {
   margin-top: 3rem;
 }
 
+.ml-4{
+  margin-left: 1rem;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .block{
   display: block;
 }
@@ -743,6 +748,10 @@ video {
   height: 1.5rem;
 }
 
+.h-24{
+  height: 6rem;
+}
+
 .w-28{
   width: 7rem;
 }
@@ -795,6 +804,10 @@ video {
   width: 1.5rem;
 }
 
+.w-24{
+  width: 6rem;
+}
+
 .max-w-3xl{
   max-width: 48rem;
 }
@@ -807,8 +820,8 @@ video {
   max-width: 32rem;
 }
 
-.max-w-6xl{
-  max-width: 72rem;
+.max-w-2xl{
+  max-width: 42rem;
 }
 
 .max-w-screen-xl{
@@ -817,10 +830,6 @@ video {
 
 .max-w-md{
   max-width: 28rem;
-}
-
-.max-w-2xl{
-  max-width: 42rem;
 }
 
 .shrink-0{
@@ -851,6 +860,10 @@ video {
   flex-direction: column;
 }
 
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
+
 .items-start{
   align-items: flex-start;
 }
@@ -875,6 +888,10 @@ video {
   gap: 2rem;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-6{
   gap: 1.5rem;
 }
@@ -885,10 +902,6 @@ video {
 
 .gap-1{
   gap: 0.25rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .gap-y-7{
@@ -931,11 +944,6 @@ video {
 
 .rounded-2xl{
   border-radius: 1rem;
-}
-
-.rounded-l{
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
 }
 
 .rounded-l-full{
@@ -988,12 +996,16 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-section-five{
-  background-image: url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/bg-halftone@2x.png');
-}
-
 .bg-section-four{
   background-image: url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/shopping-girl-home1@2x.jpg');
+}
+
+.bg-section-six{
+  background-image: url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/testi-bg@2x.png');
+}
+
+.bg-section-seven{
+  background-image: url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/payment-img@2x.jpg');
 }
 
 .from-dark-purple{
@@ -1084,39 +1096,9 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .py-14{
@@ -1124,22 +1106,25 @@ video {
   padding-bottom: 3.5rem;
 }
 
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pt-4{
   padding-top: 1rem;
 }
 
-.pb-10{
-  padding-bottom: 2.5rem;
+.pt-8{
+  padding-top: 2rem;
+}
+
+.pl-2{
+  padding-left: 0.5rem;
+}
+
+.pr-1{
+  padding-right: 0.25rem;
 }
 
 .pt-16{
@@ -1154,24 +1139,8 @@ video {
   padding-top: 1.5rem;
 }
 
-.pr-3{
-  padding-right: 0.75rem;
-}
-
-.pl-4{
-  padding-left: 1rem;
-}
-
-.pr-1{
-  padding-right: 0.25rem;
-}
-
-.pl-2{
-  padding-left: 0.5rem;
-}
-
-.pt-8{
-  padding-top: 2rem;
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .text-left{
@@ -1298,6 +1267,11 @@ video {
 .text-gray{
   --tw-text-opacity: 1;
   color: rgb(212 212 212 / var(--tw-text-opacity));
+}
+
+.text-dark{
+  --tw-text-opacity: 1;
+  color: rgb(21 21 24 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1573,6 +1547,10 @@ video {
     display: grid;
   }
 
+  .md\:w-auto{
+    width: auto;
+  }
+
   .md\:max-w-full{
     max-width: 100%;
   }
@@ -1585,8 +1563,20 @@ video {
     max-width: 72rem;
   }
 
+  .md\:max-w-7xl{
+    max-width: 80rem;
+  }
+
+  .md\:max-w-4xl{
+    max-width: 56rem;
+  }
+
   .md\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-2{
@@ -1597,8 +1587,8 @@ video {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:gap-8{
@@ -1629,19 +1619,14 @@ video {
     padding-bottom: 4rem;
   }
 
-  .md\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .md\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
   .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:text-center{
@@ -1678,6 +1663,10 @@ video {
     margin-bottom: 0px;
   }
 
+  .lg\:ml-7{
+    margin-left: 1.75rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -1710,10 +1699,6 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1722,14 +1707,17 @@ video {
     align-items: center;
   }
 
+  .lg\:bg-section-five{
+    background-image: url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/bg-halftone@2x.png');
+  }
+
+  .lg\:bg-contain{
+    background-size: contain;
+  }
+
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .lg\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .lg\:py-20{
@@ -1737,9 +1725,9 @@ video {
     padding-bottom: 5rem;
   }
 
-  .lg\:py-12{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  .lg\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .lg\:py-10{
@@ -1769,10 +1757,6 @@ video {
 
   .xl\:grid{
     display: grid;
-  }
-
-  .xl\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .xl\:flex-row{
