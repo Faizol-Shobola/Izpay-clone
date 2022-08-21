@@ -615,6 +615,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .flex{
   display: flex;
 }
@@ -711,6 +715,14 @@ video {
   gap: 1rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
 .gap-y-7{
   row-gap: 1.75rem;
 }
@@ -758,6 +770,10 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-section-four{
+  background-image: url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/shopping-girl-home1@2x.jpg');
+}
+
 .from-dark-purple{
   --tw-gradient-from: #6B5EFF;
   --tw-gradient-to: rgb(107 94 255 / 0);
@@ -766,6 +782,18 @@ video {
 
 .to-purple{
   --tw-gradient-to: #8176FF;
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .object-cover{
@@ -1017,6 +1045,18 @@ video {
     max-width: 36rem;
   }
 
+  .md\:max-w-2xl{
+    max-width: 42rem;
+  }
+
+  .md\:max-w-4xl{
+    max-width: 56rem;
+  }
+
+  .md\:max-w-lg{
+    max-width: 32rem;
+  }
+
   .md\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1029,6 +1069,11 @@ video {
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .md\:text-6xl{
@@ -1088,16 +1133,6 @@ video {
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .lg\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .lg\:py-20{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 }
 
