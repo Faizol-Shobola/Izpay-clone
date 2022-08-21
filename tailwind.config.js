@@ -7,7 +7,8 @@ module.exports = {
       'gray': '#D4D4D4',
       'dark': '#151518',
       'purple': '#8176FF',
-      'dark-purple': '#6B5EFF'
+      'dark-purple': '#6B5EFF',
+      'deep-purple': '#221f41'
     },
     extend: {
       fontFamily: {
