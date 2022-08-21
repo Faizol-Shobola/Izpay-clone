@@ -14,3 +14,4 @@
 .link {
     @apply inline-flex items-center font-medium text-base font-body uppercase tracking-wider text-white transition-colors;
 }
+
