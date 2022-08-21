@@ -8,7 +8,7 @@
 }
 
 .button {
-    @apply inline-flex items-center justify-center py-4 px-7 mr-6 font-medium text-base font-body uppercase tracking-wider text-white transition duration-200 rounded-full shadow-md;
+    @apply inline-flex items-center justify-center py-4 px-7 font-medium text-base font-body uppercase tracking-wider text-white transition duration-200 rounded-full shadow-md;
 }
 
 .link {
