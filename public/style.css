@@ -756,6 +756,10 @@ video {
   height: 6rem;
 }
 
+.h-40{
+  height: 10rem;
+}
+
 .w-28{
   width: 7rem;
 }
@@ -810,6 +814,34 @@ video {
 
 .w-24{
   width: 6rem;
+}
+
+.w-44{
+  width: 11rem;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-auto{
+  width: auto;
+}
+
+.w-80{
+  width: 20rem;
+}
+
+.w-72{
+  width: 18rem;
+}
+
+.w-52{
+  width: 13rem;
+}
+
+.w-56{
+  width: 14rem;
 }
 
 .max-w-3xl{
