@@ -108,7 +108,7 @@
     <!-- // SECTION 2 -->
     <section class="bg-dark next-clip -mt-36">
         <div class="h-52"></div>
-        <div class="cont flex flex-col justify-between xl:grid grid-cols-2 gap-4 xl:py-16 xl:flex-row xl:px-8">
+        <div class="cont flex flex-col justify-between xl:grid grid-cols-2 gap-8 xl:py-16 xl:flex-row xl:px-8">
             <div class="flex flex-col justify-center ml-7">
                 <div class="mb-6">
                     <h2 class="mb-6 text-4xl md:text-5xl capitalize font-bold font-head tracking-tight text-white sm:leading-none">
@@ -159,12 +159,78 @@
                     </div>
                 </div>
             </div>
-            <div class="">
-                <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/app-mockup-2-a@2x-e1610431074808.png" class="object-cover object-top w-full h-auto mx-auto xl:mr-24 md:max-w-xl" alt="" />
+            <div class="card flex flex-col gap-y-10 p-6 overflow-hidden transition duration-300 transform border-2 border-dark rounded-2xl shadow-md group hover:border-2 hover:border-purple/75 hover:shadow-xl">
+                <!-- // Comment Form -->
+                <div class="px-6 py-12">
+                    <div class="max-w-3xl text-left">
+                        <h5 class="font-semibold font-head text-2xl capitalize text-purple">
+                        <span class="text-white">your detail</span>
+                        </h5>
+                        <!-- // Form -->
+                        <div class="">
+                            <div class="flex flex-col mt-4 gap-y-8">
+                                <div class="flex gap-x-6">
+                                    <div class="relative">
+                                        <label for="name" class="leading-7 text-base font-body text-gray font-semibold">Name <span class="text-purple"> *</span></label>
+                                        <input type="text" id="name" name="name" placeholder="Your Name" class=" w-full text-gray border-b border-purple border-gray-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition duration-200 ease-in-out">
+                                    </div>
+                                    <div class="relative">
+                                        <label for="email" class="leading-7 text-base font-body text-gray font-semibold">Email <span class="text-purple"> *</span></label>
+                                        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full text-gray border-b border-purple border-gray-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition duration-200 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="relative">
+                                    <label for="website" class="leading-7 text-base font-body text-gray font-semibold">Subject <span class="text-purple"> *</span></label>
+                                    <input type="text" id="website" name="website" placeholder="Message Subject" class="w-full text-gray border-b border-purple border-gray-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition duration-200 ease-in-out">
+                                </div>
+                                <div class="relative">
+                                    <label for="message" class="leading-7 text-base font-body text-gray font-semibold">Comment / Question <span class="text-purple"> *</span></label>
+                                    <textarea id="message" name="message" placeholder="Your Message" class="w-full text-gray border-b border-purple border-gray-300 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition duration-200 ease-in-out"></textarea>
+                                </div>
+                                <button type="submit" class="button bg-gradient-to-r from-dark-purple to-purple hover:bg-gradient-to-l focus:shadow-outline focus:outline-none"
+                                >post comment</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- // SECTION 2 END -->
+
+    <!-- // SECTION 3 -->
+    <section class="bg-dark pt-8 px-4 md:px-0 -mb-28 z-10">
+        <div class="p-10 flex items-end justify-start relative h-[450px]">
+            <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.8);"></iframe>
+        </div>
+    </section>
+    <!-- // SECTION 3 END -->
+
+    <!-- // SECTION 4 -->
+    <section class="bg-dark pt-8 px-4 md:px-0 z-50">
+        <div class="cont bg-purple px-16 md:px-0 py-14 md:py-16 rounded-2xl">
+            <div class="max-w-2xl md:max-w-6xl mx-auto flex items-center ">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <h2 class="text-4xl md:text-5xl capitalize font-bold font-head leading-loose text-white sm:leading-none">
+                            Manage Everything in Your Hand
+                        </h2>
+                        <div class="h-full flex items-center">
+                            <div class="flex justify-between items-center w-full rounded-full bg-white h-16 pl-2 pr-1">
+                                
+                                <input type="email" placeholder="your email address" class="w-4/6 p-3 text-gray-700 transition bg-transparent border-gray-200 shadow-sm focus:ring focus:outline-none focus:ring-yellow-400 focus:border-white rounded-l-full">
+                                
+                                <button type="submit" class="button bg-gradient-to-r from-dark-purple to-purple hover:bg-gradient-to-l focus:shadow-outline focus:outline-none"
+                                >Submit</button>
+                            
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- // SECTION 4 END -->
 
     <!-- // FOOTER -->
     <footer class="bg-dark">
