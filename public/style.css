@@ -1066,6 +1066,10 @@ video {
   background-position: center;
 }
 
+.bg-left-bottom{
+  background-position: left bottom;
+}
+
 .bg-no-repeat{
   background-repeat: no-repeat;
 }
