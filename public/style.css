@@ -1238,6 +1238,11 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1348,6 +1353,11 @@ video {
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pt-4{
@@ -1521,6 +1531,10 @@ video {
 
 .leading-6{
   line-height: 1.5rem;
+}
+
+.leading-10{
+  line-height: 2.5rem;
 }
 
 .tracking-wide{
@@ -1851,6 +1865,10 @@ video {
 
   .sm\:leading-none{
     line-height: 1;
+  }
+
+  .sm\:leading-8{
+    line-height: 2rem;
   }
 }
 
