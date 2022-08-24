@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <script src="scrollreveal/scrollreveal.min.js"></script>
+    <style>
+          .sr .load-hidden {
+           visibility: hidden;
+        }
+    </style>
   
 </head>
 <body>
@@ -102,7 +108,7 @@
     <section class="bg-dark text-white">
         <div class="cont flex flex-col-reverse justify-between py-8 lg:grid grid-cols-2 gap-4 md:px-8 md:py-16">
             <div class="flex flex-col justify-center">
-                <div class="mb-6">
+                <div class="mb-6 ">
                     <h1 class="mb-6 text-4xl md:text-6xl uppercase font-bold font-head tracking-tight text-white sm:leading-none">
                         <span class="text-purple">Easiest</span> Payment Method Ever
                     </h1>
@@ -110,7 +116,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                     </p>
                 </div>
-                <div class="flex items-center flex-col md:flex-row gap-6">
+                <div class=" flex items-center flex-col md:flex-row gap-6">
                     <a
                         href="/"
                         class="button bg-gradient-to-r w-full md:w-auto from-dark-purple to-purple hover:bg-gradient-to-l focus:shadow-outline focus:outline-none"
@@ -120,8 +126,25 @@
                     <a href="/" aria-label="" class="link duration-20 hover:text-purple text-center">Learn more</a>
                 </div>
             </div>
-            <div class="ml-7">
-                <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/home-img-big@2x-e1609121743866.png" class="object-cover object-top w-full h-auto mx-auto xl:mr-24 md:max-w-xl" alt="" />
+            <div class="ml-7 relative">
+                <div class="mt-16 slide-down">
+                    <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/home-img-big@2x-e1609121743866.png" class="object-cover object-top w-full h-auto mx-auto xl:mr-24 md:max-w-xl" alt="" />
+                </div>
+                <div class="absolute top-0 right-0 slide-right-sm">
+                    <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/Efficiencydark-1.png" class="object-cover object-top w-72 h-full mx-auto md:max-w-xl" alt="" />
+                </div>
+                <div class="absolute bottom-24 left-0 slide-left">
+                    <div class="flex justify-between items-center gap-x-2 p-3 rounded-full shadow-xl bg-dark/75">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-full bg-purple">
+                            <svg class="w-10 h-10 text-white" stroke="currentColor" viewBox="0 0 52 52">
+                                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                            </svg>
+                        </div>
+                        <a href="" class="font-semibold leading-5 font-head text-purple text-xl uppercase">
+                            easy payment
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -151,7 +174,7 @@
     <!-- // SECTION 3 -->
     <section class="bg-dark">
         <div class="cont flex flex-col justify-between py-8 xl:grid grid-cols-2 gap-4 md:px-8 md:py-16">
-            <div class="">
+            <div class="slide-left">
                 <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/app-mockup-2-a@2x-e1610431074808.png" class="object-cover object-top w-full h-auto mx-auto xl:mr-24 md:max-w-xl" alt="" />
             </div>
             <div class="flex flex-col justify-center lg:ml-7">
@@ -248,8 +271,16 @@
                 </a>
                 </div>
             </div>
-            <div class="ml-7 bg-section-four bg-cover bg-center bg-no-repeat">
-                <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/shape-1@2x.png" class="object-contain object-top w-full h-auto mx-auto xl:mr-24" alt="" />
+            <div class="ml-7 relative">
+                <div class="mt-16 bg-section-four bg-cover bg-center bg-no-repeat">
+                    <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/shape-1@2x.png" class="object-contain object-top w-full h-auto mx-auto xl:mr-24" alt="" />
+                </div>
+                <div class="slide-down absolute bottom-0">
+                    <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/Last-Costslast-cost.png" class="object-contain object-top w-56 h-full mx-auto xl:mr-24" alt="" />
+                </div>
+                <div class="absolute top-10 -right-10 spotlight">
+                    <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/shopping-icon-home@2x.png" class="object-contain object-top w-[280px] h-full mx-auto" alt="" />
+                </div>
             </div>
         </div>
     </section>
@@ -268,7 +299,7 @@
             </div>
             <div class="py-8 md:py-16">
                 <div class="grid gap-8 row-gap-5 md:grid-cols-2 lg:grid-cols-3">
-                    <div class="card relative py-2 overflow-hidden transition duration-300 transform border-2 border-dark rounded-xl shadow-md group hover:border-2 hover:border-purple/75 hover:shadow-xl">
+                    <div class="interval card relative py-2 overflow-hidden transition duration-300 transform border-2 border-dark rounded-xl shadow-md group hover:border-2 hover:border-purple/75 hover:shadow-xl">
                         <div class="relative p-5 rounded-xl">
                             <div class="flex flex-col mb-5 lg:items-center lg:flex-row">
                                 <div class="flex items-center justify-cente">
@@ -286,7 +317,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card relative py-2 overflow-hidden transition duration-300 transform border-2 border-dark rounded-xl shadow-md group hover:border-2 hover:border-purple/75 hover:shadow-xl">
+                    <div class="interval card relative py-2 overflow-hidden transition duration-300 transform border-2 border-dark rounded-xl shadow-md group hover:border-2 hover:border-purple/75 hover:shadow-xl">
                         <div class="relative p-5 rounded-xl">
                             <div class="flex flex-col mb-5 lg:items-center lg:flex-row">
                                 <div class="flex items-center justify-cente">
@@ -304,7 +335,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card relative py-2 overflow-hidden transition duration-300 transform border-2 border-dark rounded-xl shadow-md group hover:border-2 hover:border-purple/75 hover:shadow-xl">
+                    <div class="interval card relative py-2 overflow-hidden transition duration-300 transform border-2 border-dark rounded-xl shadow-md group hover:border-2 hover:border-purple/75 hover:shadow-xl">
                         <div class="relative p-5 rounded-xl">
                             <div class="flex flex-col mb-5 lg:items-center lg:flex-row">
                                 <div class="flex items-center justify-cente">
@@ -322,7 +353,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card relative py-2 overflow-hidden transition duration-300 transform border-2 border-dark rounded-xl shadow-md group hover:border-2 hover:border-purple/75 hover:shadow-xl">
+                    <div class="interval card relative py-2 overflow-hidden transition duration-300 transform border-2 border-dark rounded-xl shadow-md group hover:border-2 hover:border-purple/75 hover:shadow-xl">
                         <div class="relative p-5 rounded-xl">
                             <div class="flex flex-col mb-5 lg:items-center lg:flex-row">
                                 <div class="flex items-center justify-cente">
@@ -340,7 +371,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card relative py-2 overflow-hidden transition duration-300 transform border-2 border-dark rounded-xl shadow-md group hover:border-2 hover:border-purple/75 hover:shadow-xl">
+                    <div class="interval card relative py-2 overflow-hidden transition duration-300 transform border-2 border-dark rounded-xl shadow-md group hover:border-2 hover:border-purple/75 hover:shadow-xl">
                         <div class="relative p-5 rounded-xl">
                             <div class="flex flex-col mb-5 lg:items-center lg:flex-row">
                                 <div class="flex items-center justify-cente">
@@ -358,7 +389,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col items-center justify-center">
+                    <div class="slide-right flex flex-col items-center justify-center">
                         <div class="mb-6 text-center">
                             <p class="text-base text-gray font-light font-body px-6">
                                 We have a lot of powerful service that you can get. Check for more of our available services in our product.
@@ -432,8 +463,16 @@
                 </a>
                 </div>
             </div>
-            <div class="ml-7 bg-section-seven bg-cover bg-center bg-no-repeat">
-                <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/shape-img2@2x.png" class="object-contain object-top w-full h-auto mx-auto xl:mr-24" alt="" />
+            <div class="ml-7 relative">
+                <div class="mt-16 bg-section-seven bg-cover bg-center bg-no-repeat">
+                    <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/shape-img2@2x.png" class="object-contain object-top w-full h-auto mx-auto xl:mr-24" alt="" />
+                </div>
+                <div class="slide-down absolute bottom-0">
+                    <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/Last-Operation1.png" class="object-contain object-top w-56 h-full mx-auto xl:mr-24" alt="" />
+                </div>
+                <div class="absolute top-10 -right-10 spotlight">
+                    <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/payment-icon-home@2x.png" class="object-contain object-top w-[280px] h-full mx-auto" alt="" />
+                </div>
             </div>
         </div>
     </section>
@@ -833,6 +872,62 @@
     </footer>
     <!-- // FOOTER END -->
 
+    <script>
+        var slideUp = {
+            distance: '200px',
+            origin: 'top',
+            opacity: 0,
+            duration: 1200
+        };
+        var slideDown = {
+            distance: '200px',
+            origin: 'bottom',
+            opacity: 0,
+            duration: 1200
+        };
+        var slideRight = {
+            distance: '200px',
+            origin: 'right',
+            opacity: 0,
+            duration: 1200,
+        };
+        var slideRightSm = {
+            distance: '150px',
+            origin: 'right',
+            opacity: 0,
+            duration: 1200,
+        };
+        var slideLeft = {
+            distance: '200px',
+            origin: 'left',
+            opacity: 0,
+            duration: 1200
+        };
+        var interval = {
+            distance: '200px',
+            origin: 'left',
+            opacity: 0,
+            duration: 1200,
+            interval: 200
+        };
+        var spotLight = {
+            distance: '0px',
+            duration: 100,
+            delay: 400,
+            opacity: 0.5
+        };
+
+        // Card reveal
+        ScrollReveal().reveal('.slide-up', slideUp);
+        ScrollReveal().reveal('.slide-down', slideDown);
+        ScrollReveal().reveal('.slide-right', slideRight);
+        ScrollReveal().reveal('.slide-right-sm', slideRightSm);
+        ScrollReveal().reveal('.interval',  interval);
+        ScrollReveal().reveal('.slide-left', slideLeft);
+        ScrollReveal().reveal('.spotlight', spotLight);
+        // ScrollReveal().reveal('.title', {delay:500}, {duration: 5000});
+        // ScrollReveal().reveal('.title', {delay:500}, {duration: 5000});
+    </script>
     <script src="swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 
