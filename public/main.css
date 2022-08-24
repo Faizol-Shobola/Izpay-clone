@@ -2,9 +2,6 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
 
 }
-/* .next-clip {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-} */
 .card {
     background-image: radial-gradient(at top right, #1F1B41 0%, #1C1B1B 70%);
 }

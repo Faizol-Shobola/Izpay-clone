@@ -7,6 +7,8 @@
     <title>Izpay Product website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+  
 </head>
 <body>
 
@@ -127,18 +129,18 @@
 
     <!-- // SECTION 2 -->
     <section class="bg-dark">
-        <div class="cont py-8 md:px-8 md:py-16">
-            <div class="grid grid-cols-2 row-gap-8 md:grid-cols-4">
-                <div class="text-center">
+        <div class="swiper mySwiper cont py-8 md:px-8 md:py-20">
+            <div class="swiper-wrapper grid grid-cols-2 row-gap-8 md:grid-cols-4 py-16 ">
+                <div class="swiper-slide text-center">
                     <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/global-trade-logo@2x.png" class="object-cover object-top w-40 h-auto mx-auto" alt="logo">
                 </div>
-                <div class="text-center">
+                <div class="swiper-slide text-center">
                     <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/marketup-logo@2x.png" class="object-cover object-top w-40 h-auto mx-auto" alt="logo">
                 </div>
-                <div class="text-center">
+                <div class="swiper-slide text-center">
                     <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/okfinance-logo@2x.png" class="object-cover object-top w-40 h-auto mx-auto" alt="logo">
                 </div>
-                <div class="text-center">
+                <div class="swiper-slide text-center">
                     <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/marketchat-logo@2x.png" class="object-cover object-top w-40 h-auto mx-auto" alt="logo">
                 </div>
             </div>
@@ -440,8 +442,8 @@
     <!-- // CALL-TO-ACTION -->
     <section class="bg-dark">
         <div class="cont pt-8 px-4">
-            <div class="bg-purple px-8 py-14 md:py-16 rounded-2xl">
-                <div class="max-w-2xl md:max-w-6xl mx-auto flex items-center ">
+            <div class="bg-purple bg-cta bg-cover bg-no-repeat bg-center py-14 md:py-16 rounded-2xl">
+                <div class="max-w-2xl md:max-w-6xl mx-auto flex items-center px-8">
                     <div class="grid md:grid-cols-2 gap-4">
                         <h2 class="text-4xl md:text-5xl capitalize font-bold font-head leading-10 text-white sm:leading-8">
                             Manage Everything in Your Hand
@@ -469,7 +471,7 @@
         <div class="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
-                    <div class="flex md:justify-center text-purple">
+                    <div class="flex md:justify-center lg:justify-start text-purple">
                         <svg
                             class="h-8"
                             viewBox="0 0 118 24"
@@ -520,13 +522,13 @@
                     </div>
             
                     <p
-                        class="mt-6 text-base font-body leading-relaxed md:text-center md:mx-auto md:max-w-xl text-white"
+                        class="mt-6 text-base font-body leading-relaxed md:text-center md:mx-auto md:max-w-xl lg:text-left text-white"
                     >
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
                         consequuntur amet culpa cum itaque neque.
                     </p>
             
-                    <ul class="flex md:justify-center gap-6 mt-8 md:gap-8">
+                    <ul class="flex md:justify-center lg:justify-start gap-6 mt-8 md:gap-8">
                         <li>
                         <a
                             href="/"
@@ -647,7 +649,7 @@
                 <div
                 class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-7"
                 >
-                    <div class="md:text-center sm:text-left md:col-span-2">
+                    <div class="text-left md:col-span-2">
                         <p class="text-lg font-medium font-head text-purple">About Us</p>
             
                         <nav class="mt-8">
@@ -679,7 +681,7 @@
                         </nav>
                     </div>
         
-                    <div class="md:text-center sm:text-left md:col-span-2">
+                    <div class="text-left md:col-span-2">
                         <p class="text-lg font-medium font-head text-purple">Our Services</p>
             
                         <nav class="mt-8">
@@ -711,13 +713,13 @@
                         </nav>
                     </div>
         
-                    <div class="md:text-center sm:text-left md:col-span-3">
+                    <div class="text-left md:col-span-3">
                         <p class="text-lg font-medium font-head text-purple">Contact Us</p>
             
                         <ul class="mt-8 space-y-4 text-base font-body">
                             <li>
                                 <a
-                                class="flex items-center md:justify-center gap-1.5 group"
+                                class="flex items-center gap-1.5 group"
                                 href="/"
                                 >
                                 <svg
@@ -743,7 +745,7 @@
                 
                             <li>
                                 <a
-                                class="flex items-center md:justify-center gap-1.5 group"
+                                class="flex items-center gap-1.5 group"
                                 href="/"
                                 >
                                 <svg
@@ -768,7 +770,7 @@
                             </li>
                 
                             <li
-                                class="flex items-start md:justify-center gap-1.5"
+                                class="flex items-start gap-1.5"
                             >
                                 <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -830,6 +832,9 @@
         </div>
     </footer>
     <!-- // FOOTER END -->
+
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
