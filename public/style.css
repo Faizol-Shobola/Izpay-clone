@@ -819,6 +819,10 @@ video {
   display: table;
 }
 
+.inline-table{
+  display: inline-table;
+}
+
 .grid{
   display: grid;
 }
@@ -1079,6 +1083,10 @@ video {
 
 .flex-col-reverse{
   flex-direction: column-reverse;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-start{

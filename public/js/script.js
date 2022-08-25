@@ -1,47 +1,7 @@
-new numberRush('number-one', {
-    speed: 30,
-    steps: 1,
-})
-
-new numberRush('number-two', {
-    speed: 85,
-    steps: 1,
-})
-
-new numberRush('number-three', {
-    speed: 85,
-    steps: 1,
-})
-
-new numberRush('number-four', {
-    speed: 65,
-    steps: 1,
-})
-
-new numberRush('number-five', {
-    speed: 30,
-    steps: 1,
-})
-
-new numberRush('number-six', {
-    speed: 35,
-    steps: 1,
-})
-
-new numberRush('number-seven', {
-    speed: 35,
-    steps: 1,
-})
-
-new numberRush('number-eight', {
-    speed: 35,
-    steps: 1,
-})
-
 var openMenu = document.querySelector(".open_menu");
 var closeMenu = document.querySelector(".close_menu");
 var mobileNavigation = document.querySelector(".mobile-menu");
-var subMenuHandler = document.querySelector(".toggle_sub-menu");
+var subMenuHandler = document.getElementsByClassName("toggle_sub-menu");
 var mobileSubMenu = document.querySelector(".mobile_sub-menu")
 
 // open Mobile Navigation
@@ -58,12 +18,18 @@ closeMenu.addEventListener('click', () => {
 })
 
 // toggle Mobile Navigation submenu
-subMenuHandler.addEventListener('click', () => {
-    mobileSubMenu.classList.toggle('hidden');
-    mobileSubMenu.classList.toggle('slide-right-m');
-    subMenuHandler.classList.toggle('group-hover:-rotate-180');
-
-})
+for(var i = 0; i < subMenuHandler.length; i++) {
+        subMenuHandler[i].addEventListener('click', () => {
+        // var parent = subMenuHandler.parentNode;
+        // console.log(parent)
+        // var eye = document.querySelector("a." +me[0] + "+ .mobile_sub-menu")
+        // console.log(eye)
+        mobileSubMenu.classList.toggle('hidden');
+        mobileSubMenu.classList.toggle('slide-right-m');
+        subMenuHandler.classList.toggle('group-hover:-rotate-180');
+    
+    })
+}
 
 // Swiper Animation Controller
 var swiper = new Swiper(".mySwiper", {
@@ -151,3 +117,44 @@ ScrollReveal().reveal('.slide-left-sm', slideLeftSm);
 ScrollReveal().reveal('.interval',  interval);
 ScrollReveal().reveal('.slide-left', slideLeft);
 ScrollReveal().reveal('.spotlight', spotLight);
+
+
+new numberRush('number-one', {
+    speed: 30,
+    steps: 1,
+})
+
+new numberRush('number-two', {
+    speed: 85,
+    steps: 1,
+})
+
+new numberRush('number-three', {
+    speed: 85,
+    steps: 1,
+})
+
+new numberRush('number-four', {
+    speed: 65,
+    steps: 1,
+})
+
+new numberRush('number-five', {
+    speed: 30,
+    steps: 1,
+})
+
+new numberRush('number-six', {
+    speed: 35,
+    steps: 1,
+})
+
+new numberRush('number-seven', {
+    speed: 35,
+    steps: 1,
+})
+
+new numberRush('number-eight', {
+    speed: 35,
+    steps: 1,
+})
