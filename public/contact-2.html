@@ -7,22 +7,79 @@
     <title>Izpay Product website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <script src="scrollreveal/scrollreveal.min.js"></script>
+    <style>
+          .sr .load-hidden {
+           visibility: hidden;
+        }
+    </style>
+  
 </head>
 <body>
-    
-    <!-- // NAVIGATION  -->
+
+    <!-- // NAVIGATION -->
     <header class="bg-dark">
         <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
               <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-new@2x.png" class="object-cover object-top w-28 h-auto mx-auto" alt="logo">
             </a>
-            <ul class="flex items-center text-white hidden space-x-8 lg:flex">
-              <li><a href="index.html" aria-label="Our product" title="Our product" class="link duration-20 hover:text-purple">Home</a></li>
-              <li><a href="about-us.html" aria-label="About us" title="About us" class="link duration-20 hover:text-purple">About us</a></li>
-              <li><a href="/" aria-label="Our product" title="Our product" class="link duration-20 hover:text-purple">Service</a></li>
-              <li><a href="/" aria-label="Product pricing" title="Product pricing" class="link duration-20 hover:text-purple">Pages</a></li>
-              <li><a href="/" aria-label="Product pricing" title="Product pricing" class="link duration-20 hover:text-purple">Contact us</a></li>
+            <ul class="items-center text-white hidden space-x-8 lg:flex">
+              <li><a href="index.html" aria-label="Home" title="Home" class="link duration-20 hover:text-purple py-5">Home</a></li>
+              <li><a href="about-us.html" aria-label="About us" title="About us" class="link duration-20 hover:text-purple py-5">About us</a></li>
+              <li><a href="service.html" aria-label="Service" title="Service" class="link duration-20 hover:text-purple py-5">Service</a></li>
+              <li class="group inline-block">
+                <a href="#" aria-label="Pages" title="Pages" class="link duration-20 hover:text-purple">
+                    <span class="pr-1 flex-1">pages</span>
+                    <span>
+                    <svg
+                        class="text-white group-hover:text-purple h-4 w-4 transform group-hover:-rotate-180
+                        transition duration-150 ease-in-out" fill="currentcolor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                    >
+                        <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                    </svg>
+                    </span>
+                </a>
+                <div class="bg-dark pt-5 sub-menu transform absolute z-10 scale-0 transition duration-200 ease-in-out group-hover:scale-100 origin-top w-48 -ml-7">
+                    <ul class="text-white rounded-lg px-7 py-4 w-full shadow shadow-deep-purple">
+                        <li class="w-full"><a href="team.html" aria-label="Team" title="Team" class="link duration-20 hover:text-purple w-full py-2 uppercase tracking-tighter">team</a></li>
+                        <li class="w-full"><a href="pricing.html" aria-label="Pricing Plan" title="Pricing Plan" class="link duration-20 hover:text-purple w-full py-2 uppercase tracking-tighter">pricing plan</a></li>
+                        <li class="w-full"><a href="faq.html" aria-label="FAQ" title="FAQ" class="link duration-20 hover:text-purple w-full py-2 uppercase tracking-tighter">faq</a></li>
+                        <li class="w-full"><a href="partner.html" aria-label="Partner" title="Partner" class="link duration-20 hover:text-purple w-full py-2 uppercase tracking-tighter">partner</a></li>
+                        <li class="w-full"><a href="career.html" aria-label="Career" title="Career" class="link duration-20 hover:text-purple w-full py-2 uppercase tracking-tighter">career</a></li>
+                        <li class="w-full"><a href="media.html" aria-label="Media" title="Media" class="link duration-20 hover:text-purple w-full py-2 uppercase tracking-tighter">media</a></li>
+                        <li class="w-full"><a href="single-post.html" aria-label="Single Post" title="Single Post" class="link duration-20 hover:text-purple w-full py-2 uppercase tracking-tighter">single post</a></li>
+                    </ul>
+                </div>
+              </li>
+              <li class="group inline-block">
+                <a href="#" aria-label="Pages" title="Pages" class="link duration-20 hover:text-purple">
+                    <span class="pr-1 flex-1">contact us</span>
+                    <span>
+                    <svg
+                        class="text-white group-hover:text-purple h-4 w-4 transform group-hover:-rotate-180
+                        transition duration-150 ease-in-out" fill="currentcolor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                    >
+                        <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                    </svg>
+                    </span>
+                </a>
+                <div class="bg-dark pt-5 sub-menu transform absolute z-10 scale-0 transition duration-200 ease-in-out group-hover:scale-100 origin-top w-48 -ml-7">
+                    <ul class="text-white rounded-lg px-7 py-4 w-full shadow shadow-deep-purple">
+                        <li class="w-full"><a href="contact-1.html" aria-label="Team" title="Team" class="link duration-20 hover:text-purple w-full py-2 uppercase tracking-tighter">contact 1</a></li>
+                        <li class="w-full"><a href="contact-2.html" aria-label="Pricing Plan" title="Pricing Plan" class="link duration-20 hover:text-purple w-full py-2 uppercase tracking-tighter">contact 2</a></li>
+                    </ul>
+                </div>
+              </li>
               <li>
                 <a
                   href="/"
@@ -34,62 +91,66 @@
                 </a>
               </li>
             </ul>
-            <!-- Mobile menu -->
+            <!-- Mobile Navigation -->
             <div class="lg:hidden">
-              <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+              <button aria-label="Open Menu" title="Open Menu" class="open_menu p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
                 <svg class="w-5 text-purple" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
                   <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
                   <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
                 </svg>
               </button>
-              <!-- Mobile menu dropdown
-              <div class="absolute top-0 left-0 w-full">
-                <div class="p-5 bg-white border rounded shadow-sm">
-                  <div class="flex items-center justify-between mb-4">
-                    <div>
-                      <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
-                        <svg class="w-8 text-purple" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-                          <rect x="3" y="1" width="7" height="12"></rect>
-                          <rect x="3" y="17" width="7" height="6"></rect>
-                          <rect x="14" y="1" width="7" height="6"></rect>
-                          <rect x="14" y="11" width="7" height="12"></rect>
-                        </svg>
-                        <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
-                      </a>
-                    </div>
-                    <div>
-                      <button aria-label="Close Menu" title="Close Menu" class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-                        <svg class="w-5 text-purple" viewBox="0 0 24 24">
-                          <path
-                            fill="currentColor"
-                            d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
-                          ></path>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <nav>
-                    <ul class="space-y-4">
-                      <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple">Product</a></li>
-                      <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple">Features</a></li>
-                      <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple">Pricing</a></li>
-                      <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple">About us</a></li>
-                      <li>
-                        <a
-                          href="/"
-                          class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple hover:bg-purple focus:shadow-outline focus:outline-none"
-                          aria-label="Sign up"
-                          title="Sign up"
-                        >
-                          Sign up
+              <!--  Mobile menu -->
+              <nav class="hidden mobile-menu h-full w-full max-w-[350px] fixed overflow-hidden bg-dark top-0 left-0 z-50">
+                <div>
+                    <div class="flex p-5 justify-between">
+                        <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+                            <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-new@2x.png" class="object-cover object-top w-28 h-auto mx-auto" alt="logo">
                         </a>
-                      </li>
-                    </ul>
-                  </nav>
+                        <button aria-label="Open Menu" title="Open Menu" class="close_menu p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+                            <svg class="w-5 text-purple" viewBox="0 0 24 24">
+                              <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                              <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                              <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+                            </svg>
+                          </button>
+                    </div>
                 </div>
-              </div>
-              -->
+                <ul class="overflow-y-auto h-[500px]">
+                    <li class="pl-5 p-4 w-full flex"><a href="#section1" class="flex-1 w-full text-white hover:text-purple uppercase">Section </a></li>
+                    <li class="pl-5 p-4 w-full flex"><a href="#section2" class="flex-1 w-full text-white hover:text-purple uppercase">Section </a></li>
+                    <li class="pl-5 p-4 w-full flex"><a href="#section3" class="flex-1 w-full text-white hover:text-purple uppercase">Section </a></li>
+                    <li class="pl-5 p-4 w-full group">
+                        <a href="#section4" class="w-full text-white hover:text-purple uppercase flex">
+                            <span class="pr-1 flex-1">pages</span>
+                            <span class="flex items-center">
+                            <svg
+                                class="toggle_sub-menu text-white group-hover:text-purple h-4 w-4 transform
+                                transition duration-150 ease-in-out" fill="currentcolor"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                                />
+                            </svg>
+                            </span>
+                        </a>
+                        <!-- sub-menu -->
+                        <ul class="mobile_sub-menu hidden text-white pt-3 w-full">
+                            <li class="pl-5 p-4 w-full flex"><a href="#section1" class="flex-1 w-full text-white hover:text-purple uppercase">Section </a></li>
+                            <li class="pl-5 p-4 w-full flex"><a href="#section2" class="flex-1 w-full text-white hover:text-purple uppercase">Section </a></li>
+                            <li class="pl-5 p-4 w-full flex"><a href="#section3" class="flex-1 w-full text-white hover:text-purple uppercase">Section </a></li>
+                            <li class="pl-5 p-4 w-full flex"><a href="#section1" class="flex-1 w-full text-white hover:text-purple uppercase">Section </a></li>
+                            <li class="pl-5 p-4 w-full flex"><a href="#section2" class="flex-1 w-full text-white hover:text-purple uppercase">Section </a></li>
+                            <li class="pl-5 p-4 w-full flex"><a href="#section3" class="flex-1 w-full text-white hover:text-purple uppercase">Section </a></li>
+                        </ul>
+                    </li>
+                    <li class="pl-5 p-4 w-full"><a href="#section1" class="w-full text-white hover:text-purple uppercase">Section </a></li>
+                    <li class="pl-5 p-4 w-full"><a href="#section5" class="w-full text-white hover:text-purple uppercase">Section </a></li>
+                </ul>
+            </nav>
+              
             </div>
           </div>
         </div>
@@ -237,8 +298,8 @@
     <!-- // CALL-TO-ACTION -->
     <section class="bg-dark">
         <div class="cont pt-8 px-4">
-            <div class="bg-purple px-8 py-14 md:py-16 rounded-2xl">
-                <div class="max-w-2xl md:max-w-6xl mx-auto flex items-center ">
+            <div class="bg-purple bg-cta bg-cover bg-no-repeat bg-center py-14 md:py-16 rounded-2xl">
+                <div class="max-w-2xl md:max-w-6xl mx-auto flex items-center px-8">
                     <div class="grid md:grid-cols-2 gap-4">
                         <h2 class="text-4xl md:text-5xl capitalize font-bold font-head leading-10 text-white sm:leading-8">
                             Manage Everything in Your Hand
@@ -266,7 +327,7 @@
         <div class="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
-                    <div class="flex md:justify-center text-purple">
+                    <div class="flex md:justify-center lg:justify-start text-purple">
                         <svg
                             class="h-8"
                             viewBox="0 0 118 24"
@@ -317,13 +378,13 @@
                     </div>
             
                     <p
-                        class="mt-6 text-base font-body leading-relaxed md:text-center md:mx-auto md:max-w-xl text-white"
+                        class="mt-6 text-base font-body leading-relaxed md:text-center md:mx-auto md:max-w-xl lg:text-left text-white"
                     >
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
                         consequuntur amet culpa cum itaque neque.
                     </p>
             
-                    <ul class="flex md:justify-center gap-6 mt-8 md:gap-8">
+                    <ul class="flex md:justify-center lg:justify-start gap-6 mt-8 md:gap-8">
                         <li>
                         <a
                             href="/"
@@ -444,7 +505,7 @@
                 <div
                 class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-7"
                 >
-                    <div class="md:text-center sm:text-left md:col-span-2">
+                    <div class="text-left md:col-span-2">
                         <p class="text-lg font-medium font-head text-purple">About Us</p>
             
                         <nav class="mt-8">
@@ -476,7 +537,7 @@
                         </nav>
                     </div>
         
-                    <div class="md:text-center sm:text-left md:col-span-2">
+                    <div class="text-left md:col-span-2">
                         <p class="text-lg font-medium font-head text-purple">Our Services</p>
             
                         <nav class="mt-8">
@@ -508,13 +569,13 @@
                         </nav>
                     </div>
         
-                    <div class="md:text-center sm:text-left md:col-span-3">
+                    <div class="text-left md:col-span-3">
                         <p class="text-lg font-medium font-head text-purple">Contact Us</p>
             
                         <ul class="mt-8 space-y-4 text-base font-body">
                             <li>
                                 <a
-                                class="flex items-center md:justify-center gap-1.5 group"
+                                class="flex items-center gap-1.5 group"
                                 href="/"
                                 >
                                 <svg
@@ -540,7 +601,7 @@
                 
                             <li>
                                 <a
-                                class="flex items-center md:justify-center gap-1.5 group"
+                                class="flex items-center gap-1.5 group"
                                 href="/"
                                 >
                                 <svg
@@ -565,7 +626,7 @@
                             </li>
                 
                             <li
-                                class="flex items-start md:justify-center gap-1.5"
+                                class="flex items-start gap-1.5"
                             >
                                 <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -627,6 +688,9 @@
         </div>
     </footer>
     <!-- // FOOTER END -->
+
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
