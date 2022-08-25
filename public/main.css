@@ -19,6 +19,30 @@ input, textarea {
 	-webkit-animation: slide-left 0.5s ease-out both;
 	        animation: slide-left 0.5s ease-out both;
 }
+.slide-bottom-m {
+	-webkit-animation: slide-bottom 0.5s ease-out both;
+	        animation: slide-bottom 0.5s ease-out both;
+}
+@-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+}
+@keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(-50px);
+                transform: translateY(-50px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+}
 @-webkit-keyframes slide-left {
     0% {
       -webkit-transform: translateX(0px);
