@@ -1,0 +1,6 @@
+/**
+ * Custom `@font-face` rules
+ *
+ * These will be added immediately before Tailwind’s `base` layer.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Work+Sans:wght@200;300;400&display=swap');

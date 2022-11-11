@@ -1,4 +1,7 @@
 /node_modules
-package-lock.json
-
-public/style.css
+/vendor
+.DS_Store
+script.min.js
+style.css
+style-editor.css
+beta-souk.zip
