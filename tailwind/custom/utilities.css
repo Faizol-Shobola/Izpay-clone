@@ -7,5 +7,14 @@
  * https://tailwindcss.com/docs/plugins#adding-utilities
  */
 
+ .cont {
+    @apply max-w-screen-xl mx-auto px-4;
+}
 
+.button {
+    @apply inline-flex items-center justify-center py-4 px-7 font-medium text-base font-body uppercase tracking-wider text-white transition duration-200 rounded-full shadow-md;
+}
 
+.link {
+    @apply inline-flex items-center font-medium text-base font-body uppercase tracking-wider text-white transition-colors;
+}

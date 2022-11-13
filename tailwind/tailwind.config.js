@@ -16,13 +16,25 @@ module.exports = {
 	],
 	content: [
 		// Ensure changes to PHP files and `theme.json` trigger a rebuild.
-		'./theme/**/*.php',
+		'./theme/**/*.{php, js, min.js}',
 		'./theme/theme.json',
 	],
 	theme: {
 		// Extend the default Tailwind theme.
 		extend: {
+			colors: {
+				'white': '#FFFFFF',
+				'gray': '#D4D4D4',
+				'dark': '#151518',
+				'purple': '#8176FF',
+				'dark-purple': '#6B5EFF',
+				'deep-purple': '#221f41'
+			  },
 
+			  fontFamily: {
+				head: ['Montserrat', 'sans-serif'],
+				body: ['Work Sans', 'sans-erif'],
+			  },
 		},
 	},
 	corePlugins: {
