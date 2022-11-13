@@ -11,7 +11,7 @@
 
 	<!-- // NAVIGATION -->
     <header class="bg-dark">
-        <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div class="px-4 py-5 lg:py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
               <img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-new@2x.png" class="object-cover object-top w-28 h-auto mx-auto" alt="logo">
@@ -187,7 +187,7 @@
 					array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
-					'menu_class'        => "menu main-menu flex flex-col lg:flex-row items-center text-white hidden space-x-8 lg:flex", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
+					'menu_class'        => "menu main-menu flex flex-col lg:flex-row items-center text-white space-x-8", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
 					// 'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',
 					'depth'             => "2", // (int) How many levels of the hierarchy are to be included. 0 means all. Default 0.
 					'after'				=> $icon, // (string) Text after the link markup.
