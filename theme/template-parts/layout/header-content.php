@@ -12,7 +12,7 @@
 	<!-- // NAVIGATION -->
     <header class="bg-dark">
         <div class="px-4 py-5 lg:py-2 w-full mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 flex items-center justify-between">
-          	<div class="relative flex items-center justify-between">
+          	<div class="relative flex items-center justify-between w-full lg:w-32">
 				<a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
 				<img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-new@2x.png" class="object-cover object-top w-28 h-auto mx-auto" alt="logo">
 				</a>
@@ -95,7 +95,7 @@
 						<path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
 						</svg>
 					</button>
-				<!--  Mobile menu -->
+					<!--  Mobile menu -->
 					<!-- <nav class="hidden mobile-menu h-full w-full max-w-[350px] fixed overflow-hidden bg-dark top-0 left-0 z-50">
 						<div>
 							<div class="flex p-5 justify-between">
@@ -170,7 +170,7 @@
 				</div>
 			</div>
 
-			<nav class="h-full w-full max-w-[350px] fixed overflow-hidden bg-dark top-0 left-0 z-50 flex flex-col lg:h-auto lg:max-w-none lg:static lg:flex lg:flex-row lg:w-full lg:justify-end">
+			<nav class="h-full w-full max-w-[350px] fixed bg-dark top-0 left-0 z-50 lg:z-0 hidden mobile-menu flex-col lg:h-auto lg:max-w-none lg:static lg:flex lg:flex-row lg:w-full lg:justify-end">
 				<div class="flex lg:hidden p-5 justify-between w-full">
 					<a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
 						<img src="https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/logo-new@2x.png" class="object-cover object-top w-28 h-auto mx-auto" alt="logo">
@@ -186,7 +186,7 @@
 
 
 			<?php
-				$icon = '<span class="sub-menu_icon">
+				$icon = '<span class="toggle_sub-menu">
 					<svg
 						class="text-white group-hover:text-purple h-4 w-4 transform group-hover:-rotate-180
 						transition duration-150 ease-in-out" fill="currentcolor"
