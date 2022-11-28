@@ -35,6 +35,15 @@ module.exports = {
 				head: ['Montserrat', 'sans-serif'],
 				body: ['Work Sans', 'sans-erif'],
 			  },
+			  
+			  backgroundImage: {
+				'hero': "url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/hjalftone-header-1@2x.png')",
+				'cta': "url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/halftone-subs-white@2x.png')",
+				'section-four': "url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/shopping-girl-home1@2x.jpg')",
+				'section-five': "url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2020/12/bg-halftone@2x.png')",
+				'section-six': "url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/testi-bg@2x.png')",
+				'section-seven': "url('https://templatekit.jegtheme.com/izpay/wp-content/uploads/sites/30/2021/01/payment-img@2x.jpg')",
+			   }
 		},
 	},
 	corePlugins: {

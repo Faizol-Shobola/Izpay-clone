@@ -98,13 +98,49 @@ add_action( 'after_setup_theme', 'bs_setup' );
 function bs_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => __( 'Footer', 'beta-souk' ),
-			'id'            => 'sidebar-1',
+			'name'          => __( 'Footer Info', 'beta-souk' ),
+			'id'            => 'footer-info',
 			'description'   => __( 'Add widgets here to appear in your footer.', 'beta-souk' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h4 class="widget-title capitalize text-lg font-medium text-purple mb-2">',
+			'after_title'   => '</h4>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => __( 'Footer 1', 'beta-souk' ),
+			'id'            => 'footer-1',
+			'description'   => __( 'Add widgets here to appear in your footer.', 'beta-souk' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h4 class="widget-title capitalize text-lg font-medium text-purple mb-2">',
+			'after_title'   => '</h4>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => __( 'Footer 2', 'beta-souk' ),
+			'id'            => 'footer-2',
+			'description'   => __( 'Add widgets here to appear in your footer.', 'beta-souk' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h4 class="widget-title capitalize text-lg font-medium text-purple mb-2">',
+			'after_title'   => '</h4>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => __( 'Footer 3', 'beta-souk' ),
+			'id'            => 'footer-3',
+			'description'   => __( 'Add widgets here to appear in your footer.', 'beta-souk' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h4 class="widget-title capitalize text-lg font-medium text-purple mb-2">',
+			'after_title'   => '</h4>',
 		)
 	);
 }

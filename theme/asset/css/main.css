@@ -198,3 +198,8 @@ ul.sub-menu > li span {
                 transform: translateX(0px);
     }
 }
+
+.hero-clip {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+
+}
