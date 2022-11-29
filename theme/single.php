@@ -9,41 +9,34 @@
 
 get_header();
 ?>
+<?php
+	if (have_posts()) : while (have_posts()) : the_post();
+?>
+	<!-- // PAGE TITLE  -->
+    <section class="bg-deep-purple sm:bg-gradient-to-b sm:from-dark sm:to-deep-purple hero-clip md:bg-hero bg-cover bg-left-bottom bg-no-repeat">
+        <div class="cont grid py-36">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="font-medium font-head text-5xl capitalize text-purple">
+                <span class="leading-8 text-white"><?php the_title();?></span>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!-- // PAGE TITLE END-->
 
-	<section id="primary">
-		<main id="main">
+	<?php
+			
+		get_template_part( 'template-parts/content/content', 'single' );
+	?>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-				get_template_part( 'template-parts/content/content', 'single' );
+<?php
+	endwhile; endif;
+	wp_reset_query();
+?>
 
-				if ( is_singular( 'post' ) ) {
-					// Previous/next post navigation.
-					the_post_navigation(
-						array(
-							'next_text' => '<span aria-hidden="true">' . __( 'Next Post', 'beta-souk' ) . '</span> ' .
-								'<span class="sr-only">' . __( 'Next post:', 'beta-souk' ) . '</span> <br/>' .
-								'<span>%title</span>',
-							'prev_text' => '<span aria-hidden="true">' . __( 'Previous Post', 'beta-souk' ) . '</span> ' .
-								'<span class="sr-only">' . __( 'Previous post:', 'beta-souk' ) . '</span> <br/>' .
-								'<span>%title</span>',
-						)
-					);
-				}
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
-
-				// End the loop.
-			endwhile;
-			?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
+<!-- // CALL-TO-ACTION -->
+<?php get_template_part( 'template-parts/content/content', 'cta' ); ?>
+<!-- // CALL-TO-ACTION END -->
 
 <?php
 get_footer();

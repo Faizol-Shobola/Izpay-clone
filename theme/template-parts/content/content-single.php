@@ -9,48 +9,29 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<section class="bg-dark -mt-36">
+	<div class="h-52"></div>
+	<div class="cont py-8 lg:py-10 ">
+		<div class="max-w-6xl mx-auto py-8">
+			<div class="overflow-hidden transition-shadow rounded-3xl duration-300">
+				<img src="<?php the_post_thumbnail_url();?>" class="object-cover w-full h-[300px] md:h-[500px]" alt="" />
+				<div class="max-w-4xl mx-auto py-4">
+					<div class="flex flex-col gap-y-10 p-6">
+						<p class="text-white font-body text-base">
+						<?php the_content();?>
+						</p>
+						
+						
+						<div class="flex rounded-3xl justify-between">
+							<div class="space-y-4">
+								<h6 class="font-head text-white text-lg font-medium capitalize">post date</h6>
+								<time class="font-body text-purple text-base" datetime="<?php echo get_the_date('l jS F, Y');?>" class=""><?php echo get_the_date('l jS F, Y');?></time>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<?php if ( ! is_page() ) : ?>
-			<div class="entry-meta">
-				<?php bs_entry_meta(); ?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php bs_post_thumbnail(); ?>
-
-	<div class="entry-content prose">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers. */
-					__( 'Continue reading<span class="sr-only"> "%s"</span>', 'beta-souk' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div>' . __( 'Pages:', 'beta-souk' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php bs_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-
-</article><!-- #post-${ID} -->
+</section>

@@ -22,6 +22,8 @@ get_header();
 </section>
 <!-- // PAGE TITLE END-->
 
+<?php if ( have_posts() ) : ?>
+
 <!-- // SECTION 1 -->
 <section class="bg-dark -mt-36">
     <div class="h-52"></div>
@@ -87,88 +89,27 @@ get_header();
             </p>
         </div>
         <div class="grid gap-y-16 gap-x-8 lg:grid-cols-3 py-8">
-            <div class="card overflow-hidden transition-shadow duration-300 rounded-2xl shadow-md">
-                <img src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" class="object-cover w-full h-64" alt="" />
-                <div class="flex flex-col gap-y-5 p-6">
-                    <a href="/" class="transition-colors duration-200 text-gray font-body capitalize text-lg hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">blog</a>
-                    <a href="/" aria-label="Category" title="Best Tips and Trick Modern Investment Today" class="inline-block text-2xl font-head text-purple font-bold leading-8 transition-colors duration-200 hover:text-deep-purple-accent-700">Best Tips and Trick Modern Investment Today</a>
-                    <p class="text-gray font-body text-base">
-                        Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
-                    </p>
-                    <a href="/" aria-label="" class="link duration-20 hover:text-purple text-center">
-                        <span class="text-purple">read more</span>
-                    </a>
-                </div>
-            </div>
-            <div class="card overflow-hidden transition-shadow duration-300 rounded-2xl shadow-md">
-                <img src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-64" alt="" />
-                <div class="flex flex-col gap-y-5 p-6">
-                    <a href="/" class="transition-colors duration-200 text-gray font-body capitalize text-lg hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">econimic</a>
-                    <a href="/" aria-label="Category" title="New Way Platform for Modern Investment" class="inline-block text-2xl font-head text-purple font-bold leading-8 transition-colors duration-200 hover:text-deep-purple-accent-700">New Way Platform for Modern Investment</a>
-                    <p class="text-gray font-body text-base">
-                        Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
-                    </p>
-                    <a href="/" aria-label="" class="link duration-20 hover:text-purple text-center">
-                        <span class="text-purple">read more</span>
-                    </a>
-                </div>
-            </div>
-            <div class="card overflow-hidden transition-shadow duration-300 rounded-2xl shadow-md">
-                <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-64" alt="" />
-                <div class="flex flex-col gap-y-5 p-6">
-                    <a href="/" class="transition-colors duration-200 text-gray font-body capitalize text-lg hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">promo</a>
-                    <a href="/" aria-label="Category" title="Get Free Shipping 10% Off Using Mobile Izpay" class="inline-block text-2xl font-head text-purple font-bold leading-8 transition-colors duration-200 hover:text-deep-purple-accent-700">Get Free Shipping 10% Off Using Mobile Izpay</a>
-                    <p class="text-gray font-body text-base">
-                        Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
-                    </p>
-                    <a href="/" aria-label="" class="link duration-20 hover:text-purple text-center">
-                        <span class="text-purple">read more</span>
-                    </a>
-                </div>
-            </div>
-            <div class="card overflow-hidden transition-shadow duration-300 rounded-2xl shadow-md">
-                <img src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" class="object-cover w-full h-64" alt="" />
-                <div class="flex flex-col gap-y-5 p-6">
-                    <a href="/" class="transition-colors duration-200 text-gray font-body capitalize text-lg hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">blog</a>
-                    <a href="/" aria-label="Category" title="Best Tips and Trick Modern Investment Today" class="inline-block text-2xl font-head text-purple font-bold leading-8 transition-colors duration-200 hover:text-deep-purple-accent-700">Best Tips and Trick Modern Investment Today</a>
-                    <p class="text-gray font-body text-base">
-                        Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
-                    </p>
-                    <a href="/" aria-label="" class="link duration-20 hover:text-purple text-center">
-                        <span class="text-purple">read more</span>
-                    </a>
-                </div>
-            </div>
-            <div class="card overflow-hidden transition-shadow duration-300 rounded-2xl shadow-md">
-                <img src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-64" alt="" />
-                <div class="flex flex-col gap-y-5 p-6">
-                    <a href="/" class="transition-colors duration-200 text-gray font-body capitalize text-lg hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">econimic</a>
-                    <a href="/" aria-label="Category" title="New Way Platform for Modern Investment" class="inline-block text-2xl font-head text-purple font-bold leading-8 transition-colors duration-200 hover:text-deep-purple-accent-700">New Way Platform for Modern Investment</a>
-                    <p class="text-gray font-body text-base">
-                        Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
-                    </p>
-                    <a href="/" aria-label="" class="link duration-20 hover:text-purple text-center">
-                        <span class="text-purple">read more</span>
-                    </a>
-                </div>
-            </div>
-            <div class="card overflow-hidden transition-shadow duration-300 rounded-2xl shadow-md">
-                <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-64" alt="" />
-                <div class="flex flex-col gap-y-5 p-6">
-                    <a href="/" class="transition-colors duration-200 text-gray font-body capitalize text-base hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">promo</a>
-                    <a href="/" aria-label="Category" title="Get Free Shipping 10% Off Using Mobile Izpay" class="inline-block text-2xl font-head text-purple font-bold leading-8 transition-colors duration-200 hover:text-deep-purple-accent-700">Get Free Shipping 10% Off Using Mobile Izpay</a>
-                    <p class="text-gray font-body text-base">
-                        Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
-                    </p>
-                    <a href="/" aria-label="" class="link duration-20 hover:text-purple text-center">
-                        <span class="text-purple">read more</span>
-                    </a>
-                </div>
-            </div>
+            <?php 
+			// Start the Loop.
+            while ( have_posts() ) :
+				the_post();
+				get_template_part( 'template-parts/content/content', 'archive' );
+                
+				// End the loop.
+			endwhile; ?>
         </div>
     </div>
 </section>
 <!-- // SECTION 2 END -->
+
+<?php
+else :
+
+    // If no content, include the "No posts found" template.
+    get_template_part( 'template-parts/content/content', 'none' );
+
+endif;
+?>
 
 <!-- // CALL-TO-ACTION -->
 <?php get_template_part( 'template-parts/content/content', 'cta' ); ?>
